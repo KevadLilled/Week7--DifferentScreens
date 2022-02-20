@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../img/profile1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0;
+}
+
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) {
+    .tablet {
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .container {
+        background-color: #778d6c;
+        width: 100%;
+        border: 3px solid green;
+    }
+
+    .header h1 {
+        color: rgb(121, 50, 50);
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    
+
+    .navigation ul li {
+        border: 1px solid green;
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+
+    .footer ul a {
+       color: rgb(121, 50, 50);
+    }
+
+    .footer ul li {
+        margin: 1rem;
+        font-size: 1.5rem;
+        display: block;
+    }
+    
+    .footer p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .smartphone {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .container {
+        background-color: #b8967e;
+        width: 100%;
+        border: 3px solid rgb(156, 22, 22);
+    }
+
+    .header h1 {
+        color: rgb(119, 11, 34);
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .image-container {
+        clip-path: circle(50% at 50% 50%);
+        background-image: url('../img/profile2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+        width: 450px;
+        margin: 2rem auto;  
+    }
+    
+    .navigation ul li {
+        border: 1px solid rgb(156, 22, 22);
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+
+    .footer ul a {
+       color: rgb(119, 11, 34);
+    }
+
+    .footer ul li {
+        margin: 1rem;
+        font-size: 1.5rem;
+        display: block;
+    }
+    
+    .footer p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media (min-width: 1024px){
+    .tablet {
+        display: none;
+    }
+
+    .laptop {
+        display: block;
+    }
+
+    .container {
+        background-color: #7d918c;
+        width: 100%;
+        border: 3px solid rgb(41, 78, 112);
+    }
+
+    .header h1 {
+        color: rgb(9, 104, 60);
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .image-container {
+        clip-path: circle(50% at 50% 50%);
+        background-image: url('../img/profile3.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+        width: 450px;
+        margin: 2rem auto;  
+    }
+    
+    .navigation ul li {
+        border: 1px solid rgb(41, 78, 112);
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+
+    .footer ul a {
+       color: rgb(9, 104, 60);
+    }
+
+    .footer ul li {
+        margin: 1rem;
+        font-size: 1.5rem;
+        display: block;
+    }
+    
+    .footer p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media (min-width: 1200px){
+    .laptop{
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .container {
+        background-color: #c58f5d;
+        width: 100%;
+        border: 3px solid rgb(238, 210, 158);
+    }
+
+    .header h1 {
+        color: rgb(136, 62, 12);
+        font-size: 2.5rem;
+        margin: 3rem auto;
+    }
+
+    .image-container {
+        clip-path: circle(50% at 50% 50%);
+        background-image: url('../img/profile4.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+        width: 450px;
+        margin: 2rem auto;  
+    }
+
+    .navigation ul li {
+        border: 1px solid rgb(238, 210, 158) ;
+        display: inline-block;
+        width: 16rem;
+    }
+    
+    .navigation ul li:not(:last-child) {
+        border-bottom: 1px solid rgb(238, 210, 158);
+        margin-right: 4rem;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+
+    .footer ul a {
+        color: rgb(136, 62, 12);
+     }
+ 
+     .footer ul li {
+         margin: 1rem;
+         font-size: 1.5rem;
+         display: block;
+     }
+     
+     .footer p {
+         font-size: 1.2rem;
+     }
+
+}
+
